@@ -11,10 +11,5 @@ jobs:
       uses: 'google-github-actions/auth@v0.4.0'
       with:
         token_format: 'access_token'
-        workload_identity_provider: 'projects/123456789/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-        service_account: 'my-service-account@my-project.iam.gserviceaccount.com'
-
-    - name: 'Access secret'
-      run: |-
-        curl https://secretmanager.googleapis.com/v1/projects/my-project/secrets/my-secret/versions/1:access \
-          --header "Authorization: Bearer ${{ steps.auth.outputs.access_token }}"
+        workload_identity_provider: 'projects/1067028830925/locations/global/workloadIdentityPools/dev-pool/providers/github'
+        service_account: 'dev-sa@hands-on-data-explorer.iam.gserviceaccount.com'
