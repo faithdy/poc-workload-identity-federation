@@ -1,6 +1,6 @@
 name: poc
 on:
-  dispatch_workflow:
+  workflow_dispatch:
   
 jobs:
   job:
