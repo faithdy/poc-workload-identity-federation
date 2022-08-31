@@ -1,0 +1,9 @@
+name: poc
+on:
+  dispatch_workflow:
+  
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'hey'
